@@ -13,13 +13,13 @@ let myHeading = document.querySelector('h1');
 function setUserName() {
     let myName = prompt('Please enter your name.');
     localStorage.setItem('name', myName);
-    myHeading.textContent = 'They are good ' + myName;
+    myHeading.textContent = 'Brown Goddess ' + myName;
   }
   if(!localStorage.getItem('name')) {
     setUserName();
   } else {
     let storedName = localStorage.getItem('name');
-    myHeading.textContent = 'They are good , ' + storedName;
+    myHeading.textContent = 'Brown Goddess ' + storedName;
   }
   myButton.onclick = function() {
     setUserName();
@@ -30,6 +30,6 @@ function setUserName() {
       setUserName();
     } else {
       localStorage.setItem('name', myName);
-      myHeading.innerHTML = 'They are good, ' + myName;
+      myHeading.innerHTML = 'Brown Goddess ' + myName;
     }1
   }
